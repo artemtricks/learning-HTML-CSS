@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CustomElement</title>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="./inputmask.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script  src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+          var myMap = new ymaps.Map("map", {
+              center: [48.872185, 2.354224],
+              zoom: 15
+          });
+
+
+          var myPlacemark = new ymaps.Placemark([48.872185, 2.354224], {}, {
+            iconImageHref: './Subtract.svg',
+            iconLayout: 'default#image',
+            iconImageOffset: [-3, -42],
+            iconImageSize: [30, 42],
+          });
+
+          myMap.geoObjects.add(myPlacemark);
+          myMap.controls.remove('geolocationControl'); // удаляем геолокацию
+          myMap.controls.remove('searchControl'); // удаляем поиск
+          myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+          myMap.controls.remove('typeSelector'); // удаляем тип
+          myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+          myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
+          myMap.controls.remove('rulerControl'); // удаляем контрол правил
+          myMap.behaviors.disable(['scrollZoom']);
+      }
+  </script>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+  <link rel="stylesheet" href="./style.css">
+
+
+
+
+</head>
+<body>
+  <div class="container">
+
+
+
+    <div class="checkbox">
+          <span class="title-check">Категории</span>
+          <label>
+      <input type="checkbox" name="check" id="check">
+      <span class="checkbox-style"></span>
+      <span class="text-checkbox">Динозавры</span>
+    </label>
+    <label>
+      <input type="checkbox" name="check" id="check">
+     <span class="checkbox-style"></span>
+     <span class="text-checkbox">Медведи</span>
+    </label>
+    <label>
+      <input type="checkbox" name="check" id="check">
+      <span class="checkbox-style"></span>
+      <span class="text-checkbox">Косули</span>
+    </label>
+    <label>
+      <input type="checkbox" name="check" id="check">
+      <span class="checkbox-style"></span>
+      <span class="text-checkbox">Лисы</span>
+    </label>
+    <label>
+      <input type="checkbox" name="check" id="check">
+     <span class="checkbox-style"></span>
+     <span class="text-checkbox">Волки</span>
+    </label>
+    <label>
+      <input type="checkbox" name="check" id="check">
+      <span class="checkbox-style"></span>
+      <span class="text-checkbox">Олени и лоси</span>
+    </label>
+  </div>
+
+
+  <form id="form" class="form" action="" autocomplete="off">
+    <div class="input__box">
+  <input id="name" class="form__input" type="text" placeholder="Имя*" name="name" autocomplete="off">
+  </div>
+  <div class="input__box">
+  <input id="phone" class="form__input" type="text" placeholder="Телефон*" name="phone" autocomplete="off">
+  </div>
+  <div class="input__box">
+  <input id="email" class="form__input" type="email" placeholder="E-mail*" name="email" autocomplete="off">
+  </div>
+  <div class="wrapper">
+  <button class="form__btn" type="submit">Отправить</button>
+  </div>
+  </form>
+
+
+
+  <div id="map" style="width: 600px; height: 400px"></div>
+
+
+
+
+  <div class="customscroll" data-simplebar>
+    Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований
+    Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований
+  </div>
+
+
+
+  <select name="" id="choices" class="choices">
+    <option value="">Материал</option>
+    <option>Древесина</option>
+    <option>Металл</option>
+    <option>Камень</option>
+    <option>Пластик</option>
+    <option>Композитный</option>
+    <option>Гипс</option>
+  </select>
+
+
+
+  <div class="content">
+    <div class="tooltip">
+        <div class="marker" tabindex="0"></div>
+        <div class="popup">
+            Глава 2, страница 176
+        </div>
+    </div>
+    <p class="text">Следует отметить, что социально-экономическое развитие <span data-tippy-content="Галава 70, стих 5"><svg class="tippy-tooltip" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
+      </svg>
+      </span> способствует повышению  качества переосмысления внешнеэкономических политик.</p>
+  </div>
+
+
+
+  </div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+body {
+  background-color: #424242;
+}
+
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*Checkbox*/
+
+
+.checkbox {
+  margin-right: 20px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 170px;
+  height: 300px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.title-check {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+
+label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#check {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+#check + .checkbox-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+#check + .checkbox-style:before {
+  content: '';
+  position: absolute;
+  background-image: url('./check.svg');
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity, 0.3s, ease-in-out;
+}
+
+#check:checked + .checkbox-style:before {
+  opacity: 1;
+}
+
+#check:checked + .checkbox-style {
+  border-color: #CCB26E;
+}
+
+#check:focus-visible + .checkbox-style {
+  border-color: #CCB26E;
+}
+
+#check:focus-visible + .checkbox-style + .text-checkbox {
+  color: #CCB26E;
+}
+
+#check:hover + .checkbox-style {
+  border-color: #CCB26E;
+}
+
+#check:hover + .checkbox-style + .text-checkbox {
+  color: #CCB26E;
+}
+
+
+/*Form*/
+
+.form {
+  width: 440px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px ;
+  background-color: #000000;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.form__input {
+
+  padding: 24px 20px;
+  background: #FFFFFF;
+  border: 1px solid #FF5C00;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.form__btn {
+  display: flex;
+  background: #FF5C00;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 18px 53px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.form__btn:hover {
+  background-color: #ff8843;
+}
+
+.form__btn:active {
+  background-color: #c04600;
+}
+
+.input__box {
+display: flex;
+flex-direction: column;
+position: relative;
+margin-bottom: 30px;
+}
+
+.just-validate-error-label {
+
+position: absolute;
+   top: -24px;
+   left: 10px;
+}
+
+
+
+/*Map*/
+
+[class="ymaps-2-1-79-ground-pane"] {
+  filter: grayscale(1);
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+#map {
+  margin-bottom: 50px;
+}
+
+
+/*Scrollbar*/
+
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+
+.simplebar-scrollbar::before {
+  background-color: #CCB26E;
+}
+
+.customscroll {
+  padding: 20px 30px;
+  width: 400px;
+  height: 310px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #333333;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+
+/*Select*/
+
+
+.choices {
+  margin-bottom: 300px;
+}
+.choices .choices__list.choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.main_choices.choices[data-type*=select-one]:after {
+  height: 8px;
+  width: 8px;
+  border: 2px solid gray;
+  z-index: 5;
+  border-width: 0 0 1px 1px;
+  transform: rotate(-45deg);
+  top: 18px;
+  right: 15px;
+}
+
+.main_choices.choices[data-type*=select-one].is-open:after {
+  transform: rotate(135deg);
+  margin-top: 5px;
+  border-color: #CCB26E;
+}
+
+.main_choices .choices__inner {
+  box-sizing: border-box;
+}
+
+.main_choices {
+  max-width: 176px;
+}
+
+.main_choices .choices__list--dropdown {
+  top: 24px;
+  padding-top: 24px;
+  z-index: 1;
+  border-radius: 10px;
+  width: 98%;
+}
+
+
+.main_choices .choices__list--dropdown .choices__item--selectable {
+  margin-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.main_choices .choices__inner {
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.main_choices.is-open .choices__inner {
+  border-radius:  10px;
+  border: 1px solid #CCB26E;
+}
+
+.choices__list--dropdown.is-active {
+  border: 1px solid #CCB26E;
+
+}
+
+
+/*tooltip*/
+
+.content {
+  width: 370px;
+  height: 160px;
+  padding: 20px 70px 20px 30px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+
+  left: 99%;
+  top: 64px;
+  width: 20px;
+  height: 20px;
+  background-image: url('./tooltip1.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  left: 72%;
+  bottom: -55px;
+  margin-top: 10px;
+  background-image: url('./Union.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 15px;
+  max-width: max-content;
+  min-width: 190px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.marker:hover + .popup,
+.marker:focus + .popup {
+  opacity: 1;
+
+
+}
+
+.marker:hover,
+.marker:focus-visible {
+  background-image: url('./Subtractbrown.svg');
+  outline: none;
+}
+
+.tippy-tooltip:hover path {
+  fill: #CCB26E;
+}
