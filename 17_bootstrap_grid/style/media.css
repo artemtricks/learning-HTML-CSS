@@ -1,6 +1,6 @@
 
 @media (max-width: 1024px) {
-    
+
     .hero {
         padding-bottom: 135px;
     }
@@ -10,7 +10,7 @@
         line-height: 100%;
         margin-bottom: 14px;
     }
-    
+
     .hero__content {
     padding-top: 15%;
     }
@@ -67,19 +67,19 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img2 {
         background-image: url('../image/md_courses2.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img3 {
         background-image: url('../image/md_courses3.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img4 {
         background-image: url('../image/md_courses4.jpg');
         background-repeat: no-repeat;
@@ -99,10 +99,10 @@
         line-height: 100%;
         margin-bottom: 14px;
     }
-    
+
     .hero__content {
         padding-top: 15%;
-    
+
     }
 
     .hero__img {
@@ -156,19 +156,19 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img2 {
         background-image: url('../image/md_courses2.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img3 {
         background-image: url('../image/md_courses3.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img4 {
         background-image: url('../image/md_courses4.jpg');
         background-repeat: no-repeat;
@@ -233,19 +233,19 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .teachers-photo2 {
         background-image: url('../image/teacher_img2.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .teachers-photo3 {
         background-image: url('../image/teacher_img3.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .teachers-photo4 {
         background-image: url('../image/teacher_img4.jpg');
         background-repeat: no-repeat;
@@ -259,19 +259,19 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img2 {
         background-image: url('../image/sm_courses2.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img3 {
         background-image: url('../image/sm_courses3.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    
+
     .courses-img4 {
         background-image: url('../image/sm_courses4.jpg');
         background-repeat: no-repeat;
@@ -297,14 +297,15 @@
     .courses__card-descr {
         margin-bottom: 12%;
     }
-    
+
 }
 
 
 
 
 @media (max-width: 575px) {
-    /*Header*/
+
+  /*Header*/
 
     .header {
         padding-bottom: 0;
@@ -320,7 +321,12 @@
     }
 
         /*burger menu*/
-    .nav {  
+
+    .stop-scroll {
+        overflow: hidden;
+    }
+
+    .nav {
         position: absolute;
         right: 0;
         top: 0;
@@ -335,12 +341,12 @@
         visibility: hidden;
         transform: translateX(120%);
         transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-     }
+    }
 
      .nav--active {
         visibility: visible;
         transform: none;
-     }
+    }
 
      .nav .nav__list {
         flex-direction: column;
@@ -402,15 +408,15 @@
      .teachers-photo1 {
         background-image: url('../image/teachers_mbl1.jpg');
     }
-    
+
     .teachers-photo2 {
         background-image: url('../image/teachers_mbl2.jpg');
     }
-    
+
     .teachers-photo3 {
         background-image: url('../image/teachers_mbl3.jpg');
     }
-    
+
     .teachers-photo4 {
         background-image: url('../image/teachers_mbl4.jpg');
     }
@@ -428,15 +434,15 @@
     .courses-img1 {
         background-image: url('../image/courses_mbl-1.jpg');
     }
-    
+
     .courses-img2 {
         background-image: url('../image/courses_mbl-2.jpg');
     }
-    
+
     .courses-img3 {
         background-image: url('../image/courses_mbl-3.jpg');
     }
-    
+
     .courses-img4 {
         background-image: url('../image/courses_mbl-4.jpg');
     }
@@ -447,9 +453,9 @@
     }
 
 
- 
+
     /*Advantages*/
-    
+
     .advantages__image {
         display: none;
     }
@@ -492,10 +498,10 @@
         line-height: 19px;
     }
 
-   
+
 }
-    
-    
+
+
 /* от 576 до 350 нужно сделать брейкпоинт потому что едет верстка*/
 
 
@@ -551,7 +557,7 @@
     .courses {
         padding-top: 47px;
         padding-bottom: 18px;
-    }   
+    }
 
     .courses__title {
         font-size: 20px;
@@ -576,6 +582,6 @@
     }
 
 }
-    
+
 
 
